@@ -1,0 +1,175 @@
+body {
+    overflow-x: hidden;
+    background-color: #f7f5f9;
+    position: relative;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif
+}
+
+h1, h2, h3 {
+	font-family: 'Varela Round', sans-serif
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 42px;
+    color: #f46c93;
+}
+
+h2{
+
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+span {
+    color: #f46c93;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.float-left{
+    float: left;
+}
+
+h2.float-left{
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+    padding-top: 20px;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #2f2442;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #E91E63;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: #f7f5f9;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #514B5F;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover {
+    background-color: #f46c93;
+    color: white;
+}
+
+.nav-pills > li > a,
+.nav-pills > li.active > a:hover {
+    border-radius: 0;
+}
+
+.sidebar-nav > .sidebar-brand {
+    color: #f46c93;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.table-gulp-tasks > table > thead > tr > th:first-child{
+    width: 20%;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+    background: #2f2442;
+    max-height: 400px;
+}
