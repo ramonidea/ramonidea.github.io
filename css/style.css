@@ -142,8 +142,8 @@ body.fp-responsive .section {
 }
 
 /* line 73, sass/components/_base.sass */
-#fp-nav ul > li a[href^="#services"]:before {
-  content: 'services';
+#fp-nav ul > li a[href^="#education"]:before {
+  content: 'Education';
 }
 
 /* line 75, sass/components/_base.sass */
@@ -152,8 +152,8 @@ body.fp-responsive .section {
 }
 
 /* line 77, sass/components/_base.sass */
-#fp-nav ul > li a[href^="#contact"]:before {
-  content: 'contact';
+#fp-nav ul > li a[href^="#experience"]:before {
+  content: 'experience';
 }
 
 /* Full page navigation normal state */
@@ -225,7 +225,7 @@ body.fp-responsive .section {
   background-color: #000;
   z-index: 999999;
   -webkit-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 /* line 11, sass/components/_preloader.sass */
@@ -248,7 +248,7 @@ body.fp-responsive .section {
 .preloader-container .loader.loader-anim-start {
   width: 400px;
   -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 /* line 24, sass/components/_preloader.sass */
@@ -256,7 +256,7 @@ body.fp-responsive .section {
   width: 0;
   margin-left: 200px;
   -webkit-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
-  transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+  transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
 }
 
 /* ---------------------------
@@ -902,18 +902,18 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 
 /* Services section */
 /* line 76, sass/components/_sections.sass */
-.section-services .service-cards {
+.section-education .education-cards {
   margin-top: 80px;
 }
 
 /* line 78, sass/components/_sections.sass */
-.section-services .service-cards .service-icon {
+.section-education .education-cards .service-icon {
   width: 128px;
   height: 128px;
 }
 
 /* line 81, sass/components/_sections.sass */
-.section-services .service-cards .service-header {
+.section-education .education-cards .service-header {
   margin-top: 40px;
   margin-bottom: 25px;
 }
@@ -1018,25 +1018,5 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 }
 
 /* Contact section */
-/* line 159, sass/components/_sections.sass */
-.section-contact .mail-form {
-  margin-top: 60px;
-}
 
-/* line 161, sass/components/_sections.sass */
-.section-contact .contact-block {
-  margin-top: 40px;
-}
 
-/* line 163, sass/components/_sections.sass */
-.section-contact .contact-block .contact-icon {
-  display: inline-block;
-}
-
-/* line 165, sass/components/_sections.sass */
-.section-contact .contact-block .contact-icon i {
-  font-size: 84px;
-  line-height: 100px;
-  color: #fff;
-  padding: 5px;
-}

@@ -27,9 +27,9 @@
     // Sections
     var $sectionHome = $(".section-home"),
         $sectionAbout = $(".section-about"),
-        $sectionServices = $(".section-services"),
+        $sectionEducation = $(".section-education"),
         $sectionPortfolio = $(".section-portfolio"),
-        $sectionContact = $(".section-contact");
+        $sectionExperience = $(".section-experience");
 
     var $onLoadTrigger = $("<div/>", {
         "class": "$onLoadTrigger",
@@ -68,18 +68,18 @@
         var allH = [];
         allH.push($sectionHome.height());
         allH.push($sectionAbout.height());
-        allH.push($sectionServices.height());
+        allH.push($sectionEducation.height());
         allH.push($sectionPortfolio.height());
-        allH.push($sectionContact.height());
+        allH.push($sectionExperience.height());
         return Math.max.apply(Math, allH);
     };
     var maxW = function () {
         var allW = [];
         allW.push($sectionHome.width());
         allW.push($sectionAbout.width());
-        allW.push($sectionServices.width());
+        allW.push($sectionEducation.width());
         allW.push($sectionPortfolio.width());
-        allW.push($sectionContact.width());
+        allW.push($sectionExperience.width());
         return Math.max.apply(Math, allW);
     };
 
@@ -211,7 +211,7 @@
      * Fullpage.js
      * --------------------- */
     $('#main').fullpage({
-        anchors: ['home', 'about', 'services', 'portfolio', 'contact'],
+        anchors: ['home', 'about', 'education', 'experience', 'portfolio'],
         responsiveWidth: maxW(),
         responsiveHeight: maxH(),
         navigation: true,
