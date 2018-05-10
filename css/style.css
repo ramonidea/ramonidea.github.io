@@ -918,6 +918,25 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
   margin-bottom: 25px;
 }
 
+
+/* experience section */
+/* line 76, sass/components/_sections.sass */
+.section-experience .experience-cards {
+  margin-top: 80px;
+}
+
+/* line 78, sass/components/_sections.sass */
+.section-experience .experience-cards .service-icon {
+  width: 128px;
+  height: 128px;
+}
+
+/* line 81, sass/components/_sections.sass */
+.section-experience .experience-cards .service-header {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
 /* Portfolio section */
 /* line 87, sass/components/_sections.sass */
 .section-portfolio .inline-list {

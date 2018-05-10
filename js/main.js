@@ -114,7 +114,7 @@
                 // test each item
                 for (var i = 0; i < items.length; i++) {
                     var item = items[i];
-                    var isMatched = $(item).data("category") === filter;
+                    var isMatched = $(item).data("category").indexOf(filter) != -1 ;
                     // add to matches if its a match
                     if (isMatched) {
                         matches.push(item);
