@@ -275,6 +275,7 @@
         $showMenuButton = $(".show-menu-button"),
         $menuMask = $(".menu-mask"),
         $fpNav = $("#fp-nav");
+    $fpNav.show();
 
     // Variables
     var menuAnimTime = 600;

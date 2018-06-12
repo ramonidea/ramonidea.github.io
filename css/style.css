@@ -1,3 +1,18 @@
+.no_margin{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.education-card{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.left-align{
+  text-align: left;
+}
+
+
 /*
  * Project:        NOISE - HTML5 Template
  * Version:        1.0
@@ -868,9 +883,9 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 /* About section */
 /* line 56, sass/components/_sections.sass */
 .section-about .person-img img {
-  -webkit-filter: grayscale(1);
+  /*-webkit-filter: grayscale(1);
           filter: grayscale(1);
-  width: 100%;
+*/  width: 100%;
   height: auto;
 }
 
@@ -903,7 +918,7 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 /* Services section */
 /* line 76, sass/components/_sections.sass */
 .section-education .education-cards {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 /* line 78, sass/components/_sections.sass */
