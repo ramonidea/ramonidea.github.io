@@ -3,8 +3,7 @@
   margin-bottom: 0px;
 }
 .education-card{
-  margin-left: 20%;
-  margin-right: 20%;
+
   text-align: center;
 }
 
@@ -1039,7 +1038,7 @@ input:active, input:focus, input:hover, textarea:active, textarea:focus, textare
 }
 
 /* line 148, sass/components/_sections.sass */
-.section-portfolio .grid-item .portfolio-image img {
+ .img-responsive {
   width: 285px;
   height: 185px;
   -webkit-transition: all 1s ease;
