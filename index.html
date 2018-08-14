@@ -22,7 +22,35 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CPoppins:600,900" rel="stylesheet">
-
+    <script type="text/JavaScript" src="js/pdfobject.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var success = new PDFObject({
+                url: "pdf/vlc_paper.pdf",
+                pdfOpenParams: {
+                    scrollbars: '0',
+                    toolbar: '0',
+                    statusbar: '0'
+                }
+            }).embed("pdf1");
+            var success1 = new PDFObject({
+                url: "pdf/food_printer.pdf",
+                pdfOpenParams: {
+                    scrollbars: '0',
+                    toolbar: '0',
+                    statusbar: '0'
+                }
+            }).embed("pdf2");
+            var success2 = new PDFObject({
+                url: "pdf/diet_imporvement.pdf",
+                pdfOpenParams: {
+                    scrollbars: '0',
+                    toolbar: '0',
+                    statusbar: '0'
+                }
+            }).embed("pdf3");
+        };
+    </script>
 </head>
 
 <body>
@@ -35,6 +63,336 @@
 
     <!-- Background image -->
     <div id="bg"></div>
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>High-speed Visible Light Data Communication System</h2>
+                                <hr class="star-primary">
+
+                                <div id="pdf1" style="width:700px;height:600px;">
+                                    <p style="text-align: left">
+                                        <a href="https://drive.google.com/file/d/0B2iAQIcPulnkQjc0NlM2bEhOQWs/view?usp=sharing">Click here to View the PDF</a>
+                                    </p>
+                                </div>
+
+                                <p style="text-align: left">
+                                    <br/>
+                                    <br/>Wireless communications, such as Wi-Fi and Bluetooth, are commonly used in the daily life. However, while more and more wireless devices occupy the available frequencies, the frequency spectrum is reaching a maximum
+                                    capacity.
+                                    <br/>
+                                    <br/> Thus, Li-Fi, communicating using light waves between two devices, becomes a future solution to transmit data. LED devices with a data wave generator may keep the lighting functionality of a LED while sending data
+                                    in the background. With the full range of the visible and infrared light spectrum, we may transmit data day and night. With Li-Fi, data communication happens indoors with low latency and high speed and is hard to hijack
+                                    from outside the room. On the receiver side, a small solar panel both receives the signal and recycles the power to charge the battery for future use. It thus saves energy lost in standard wireless data transmission.
+                                    The system consists of two Arduino (microcontroller) devices as the emitter and receiver. The user interface, based on the Python programming language, is used to control sending and receiving data. Infrared LED signals
+                                    the beginning and end of the data transmission During the transmission, LEDs switching on and off signal binary 0’s and 1’s.
+                                    <br/>
+                                    <br/> This system can transmit text and images successfully. However, with the limitation of the consumer-grade solar panel’s response time, it is hard to reach high speeds in data transmission. With high-end and low-response-time
+                                    components, it will be able to transmit live videos at high speeds. The Li-Fi system not only provides the basic lighting function but also sends the data and power to the receiver side.</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>
+                                                August 2016 - April 2017
+                                            </strong>
+                                    </li>
+                                    <li>Personal Project @ Lyndon Institute
+
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                <p>
+                                                    <a href="https://github.com/ramonidea/LI-FI-Arduino">Github Source Code. MIT License, Copyright (c) 2017 Yiren Qu</a>
+                                                </p>
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>Edible Material Printer with UI</h2>
+                                <hr class="star-primary">
+
+                                <div id="pdf2" style="width:700px; height:600px;">
+                                    <p style="text-align: left">
+                                        <a href="https://drive.google.com/file/d/0B2iAQIcPulnkdUlpZ2dZUUp0YUk/view?usp=sharing">Click here to View the PDF</a>
+                                    </p>
+                                </div>
+
+
+                                <p style="text-align: left">
+                                    <br/>
+                                    <br/>Our group aimed to use 3D materials to print pictures and make an edible ink printer. We decided to use raw food material, such as marshmallow fluff and icing which do not need to be heated before being extruded.
+                                    We used an Arduino, a modern and portable microcontroller, to control two stepper motors to draw pictures. The two stepper motors perform as two axes to simultaneously move to all coordinates of the drawn pictures.
+                                    The frame of the printer is made of acrylic, protecting the printing area and the breadboard wiring area. We attached two acrylic panels to the linear bearings to create smoother movements from the motors. We created
+                                    a separate side box to safely house most of the wiring and the Arduino. Our extruder contains an outer protection case, a top plunger and a servo gear controlling the flow of the material. A small plunger is being used
+                                    to squeeze the edible printing material out of the bag from extruder. Due to the limited memory of Arduino, we used Windows Presentation Form (WPF) C# user interface to make serial port communication, interpret GCode
+                                    file to point and send them to the Arduino. The two stepper motors work in unison, but we need to test the feasibility of the extruder with different food materials.</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>
+                                                June 2016 - July 2016
+                                            </strong>
+                                    </li>
+                                    <li>Group Project @ Rose-Hulman Institute of Technology
+
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                <p>
+                                                    <a href="https://github.com/ramonidea/Icing-Food-printer">Github Source Code. MIT License, Copyright (c) 2017</a>
+                                                </p>
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>A Hybrid Recommender System for Diet Improvement Based on Health and Taste</h2>
+                                <hr class="star-primary">
+                                <div id="pdf3" style="width:700px; height:600px;">
+                                    <p style="text-align: left">
+                                        <a href="https://drive.google.com/file/d/0B2iAQIcPulnkZHEyLVcxa1pZWWc/view?usp=sharing">Click here to View the PDF</a>
+                                    </p>
+                                </div>
+
+
+                                <p style="text-align: left">
+                                    <br/>
+                                    <br/>Recommender systems are used everywhere today, such as for online shopping or Netflix videos. The use of these systems gives us the ability to predict the taste of food effectively. In addition, other food concerns,
+                                    such as food safety and nutritional value have become more important than before. With these thoughts, a novel diet improvement system is proposed in this research, which is based on a recommender system using hybrid
+                                    matrix decomposition and K-nearest neighborhood algorithms to help people meet their health goals. There are many existing programs to recommend a healthy diet. Unfortunately, most systems recommend foods that are radically
+                                    different from a person’s typical diet, making it difficult to adjust to and likely that the person will reject the diet and not meet their health goals. The results of an additional psychological study of induced motivation
+                                    are incorporated into the system to generate a model enabling each user to gradually accept healthier foods into his/her diet. The need to minimize error in predicting taste requires the evaluation of a combination
+                                    of different algorithms. In addition, it also requires optimization of different parameters of the algorithms to determine the most efficient and accurate way to recommend diet changes. The system contributes a new
+                                    application of the hybrid optimized recommender system on gradually diet improvement in order to satisfy user’s health goals.</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>
+                                                June 2015 - April 2016
+                                            </strong>
+                                    </li>
+                                    <li>Personal Project @ Lyndon Institute
+
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                <p>
+                                                    <a href="https://github.com/ramonidea/DietImprovement">Github Source Code. MIT License, Copyright (c) 2017 Yiren Qu</a>
+                                                </p>
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>2TR Tutoring Phone App</h2>
+                                <hr class="star-primary">
+
+                                <!--       <div id="pdf4" style="width:700px; height:600px;">It appears you don't have Adobe Reader or PDF support in this web browser. <a href="~/pdf/diet_improvement.pdf">Click here to download the PDF</a></div>
+    
+    -->
+                                <p style="text-align: center">
+                                    <br/>
+                                    <br/> Peer Tutor Service @ Lyndon Institute,
+                                    <br/>Available on
+                                    <a href="https://itunes.apple.com/us/app/2tr-peer-tutor/id1208995618?mt=8">Apple Store</a> &
+                                    <a href="https://play.google.com/store/apps/details?id=com.lyndoninstitute.tutor">Google Play Store</a>
+                                </p>
+                                <ul class="list-inline item-details">
+                                    <li>
+                                        <img class="img-fluid img-centered" src="pdf/logo.png" alt="2TR_logo">
+                                    </li>
+
+                                    <li>Date:
+                                        <strong>
+                                                October 2016 - May 2017
+                                            </strong>
+                                    </li>
+                                    <li>Group Project @ Lyndon Institute
+
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                <!--      <p><a href="https://github.com/ramonidea/DietImprovement">Github Source Code. MIT License, Copyright (c) 2017 Yiren Qu</a></p>-->
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>VEIL Inc.</h2>
+                                <hr class="star-primary">
+                                <img class="img-fluid img-centered" src="pdf/veil_logo.png" alt="">
+                                <p style="text-align: left"> VEIL uses a combination of ultra thin sensors under the grip and an app to monitor, record and visualize foot position/movements across the surface of the board. With this data we can clearly see the difference between
+                                    tricks that were landed bolts and those that weren’t. We're also building out a comparison analysis tool that allows skaters to see a side-by-side view of their tricks vs another skaters. This is extremely helpful when
+                                    learning new tricks as finding the perfect foot position always takes a lot of time.
+                                    <br/>
+                                    <br/> VEIL can drastically decrease the amount of time it takes to learn a new trick and improve the overall consistency when performing the tricks. As you know, in contest skating you don’t get 100 tries at a line
+                                    like you do when filming a video part, consistency is a must.
+                                </p>
+                                <ul class="list-inline item-details">
+                                    <li>Role:
+                                        <strong>
+                                                Partner and Embedded System Developer
+                                            </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>November 2016 - September 2017
+                                            </strong>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                If you are interested in what we are doing, please contact us to learn more info.
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <h2>Navi - Astrometric Instruments Inc. </h2>
+                                <hr class="star-primary">
+                                <img class="img-fluid img-centered" src="img/portfolio/logo.png" alt="">
+                                <p style="font-size:200%">Telescope Poiting Model Solver & Dynamic Error Correction Desktop Software </p>
+                                <p style="font-size:90%">Astrometric’s Navi is a tool that finds the best Dynamic Correction coefficients given a set of telescope pointing observations. These observations consists of Target Coordinate (where the telescope was command to go) and
+                                    Observed Coordinate (where the telescope was observed to actually point) pairs. With a sufficient number of these Target/Observed pairs, Navi can find a set of Dynamic Correction coefficients that dramatically improves
+                                    telescope pointing and tracking. Astrometric’s Navi technology is available as a stand-alone program (Navi-SA) which can be run separate from Maestro to find nominal Dynamic Correction coefficients or as an adaptive
+                                    pointing corrector as described in the next section.</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Role:
+                                        <strong>
+                                                UI Developer, Software Developer
+                                            </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>December 2016 - Present
+                                            </strong>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                                If you are interested in what we are doing, please contact us to learn more info.
+                                            </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                        Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Main section -->
     <div id="main" class="fullpage">
@@ -89,9 +447,8 @@
                                 <span class="slide-anim" data-anim-delay="3" data-anim-duration="300">About me</span>
                             </h1>
                             <div class="person-about-text">
-                                <p class="fadeIn-anim" data-anim-delay="4" data-anim-duration="700" style="padding-left: 40px">I am currently a student of University of Washington, studying Computer Engineering and Informatics.
-                                    I have done projects in various fields in Computer Science and Engineering. I love to
-                                    explore new ideas and do projects for the community.</p>
+                                <p class="fadeIn-anim" data-anim-delay="4" data-anim-duration="700" style="padding-left: 40px">I am currently a student of University of Washington, studying Computer Engineering and Informatics. I have done projects in various fields in Computer Science and Engineering. I love to explore new ideas and do projects
+                                    for the community.</p>
                             </div>
                             <!-- Button block -->
                             <div class="button-block">
@@ -142,7 +499,7 @@
                         <!-- Edu cards -->
                         <div class="education-cards">
                             <!-- Edu card -->
-                           
+
 
                             <div class="col-md-6 education-card">
                                 <!-- img class="slide-anim" data-anim-delay="3" data-anim-duration="300" style=" width: 80%;" src="img/CSEWordmark_white.png"
@@ -152,8 +509,8 @@
                                 <h3 class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em">
                                     <br> <span class="invert"> B.S. in Informatics</span>
                                     <br> June 2020 (Expected)
-                                   
-                                   <!-- <br> B.S. in Computer Engineering -->
+
+                                    <!-- <br> B.S. in Computer Engineering -->
                                     <br>
                                 </h3>
                             </div>
@@ -200,7 +557,7 @@
                         <div class="row experience-cards">
                             <!-- Edu card -->
 
-                         <!--    <div class="col-md-3 education-card">
+                            <!--    <div class="col-md-3 education-card">
                                 <img class="slide-anim" data-anim-delay="3" data-anim-duration="300" style=" width: 80%;" src="img/sod.png" alt="LI">
 
                                 <p class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em">
@@ -249,92 +606,88 @@
                                 </p>
                             </div> -->
                             <div class=" col-md-4 education-card">
-                                    <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300" style="color:#4b2e83;font-weight: bolder;
+                                <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300" style="color:#4b2e83;font-weight: bolder;
                                     text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;">University of Washington, School of Dentistry</h3>
-                                 <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
-                                       
-                                        <h3 class="no_margin" ><b><span class="invert">Web Developer and IT assistant</span></b></h3>
-                                       <p class="left-align">
-                                            <br> Mar 2018 – Present
-                                        <br> • Maintain the School of Dentistry websites, and customize the PHP
-                                        plugins to add new features to the websites.
+                                <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
+
+                                    <h3 class="no_margin"><b><span class="invert">Web Developer and IT assistant</span></b></h3>
+                                    <p class="left-align">
+                                        <br> Mar 2018 – Present
+                                        <br> • Maintain the School of Dentistry websites, and customize the PHP plugins to add new features to the websites.
                                         <br> • Develop internal web applications with C# ASP .Net platform.
                                         <br>
                                     </p>
-                                    </div>
                                 </div>
-                       
-                                <div class="col-md-4 education-card">
-                                        <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300">Personal Robotics Lab @ <span style="color:#4b2e83;font-weight: bolder;
-                                            text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;background-color: inherit !important">Paul G. Allen School of Computer Science & Engineering</span></h3>
-                                        <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
-                                                 
-                                               <h3 class="no_margin" ><b><span class="invert">Research Assistant</span></b></h3>
-                                              <p class="left-align">
-                                                    <br> Nov 2017 – Present
-                                               <br> • Develop wireless transmission methods with Python & C++ for high-volume
-                                                streaming data between the robot end effector sensors and the main central computer on ROS platform.
-                                                <br> • Design 3D connector for the embedded board and the robot. (Linux embedded system)
-                                               <br>
-                                           </p>
-                                           </div>
-                                       </div>
-                    
-                     
-                                <div class="col-md-4 education-card">
-                                        <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300">Aresoft Co.,Ltd.</h3>
-                                        <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
-                                                 
-                                               <h3 class="no_margin" ><b><span class="invert">Web Developer Summer Intern</span></b></h3>
-                                              <p class="left-align">
-                                                    <br> Jul 2017 – Aug 2017 
-                                                    <br> • Collaborated with my team to improve the C# .NET MVC CRM (Customer
-                                                    Relationship Management) website which specialized for privately-offered fund
-                                                    companies. 
-                                                    <br> • Worked closely with clients to modify the features. (SQL, C#, .NET,
-                                                    Web MVC)
-                                                    
-                                               <br>
-                                           </p>
-                                           </div>
-                                       </div>
+                            </div>
+
+                            <div class="col-md-4 education-card">
+                                <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300">Personal Robotics Lab @ <span style="color:#4b2e83;font-weight: bolder;
+                                            text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;background-color: inherit !important">Paul  G. Allen School of Computer Science & Engineering</span></h3>
+                                <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
+
+                                    <h3 class="no_margin"><b><span class="invert">Research Assistant</span></b></h3>
+                                    <p class="left-align">
+                                        <br> Nov 2017 – Present
+                                        <br> • Develop wireless transmission methods with Python & C++ for high-volume streaming data between the robot end effector sensors and the main central computer on ROS platform.
+                                        <br> • Design 3D connector for the embedded board and the robot. (Linux embedded system)
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 education-card">
+                                <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300"> <span style="color:#4b2e83;font-weight: bolder;
+                                            text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;background-color: inherit !important">Aresoft Co.,Ltd. </span></h3>
+                                <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
+
+                                    <h3 class="no_margin"><b><span class="invert">Web Developer Summer Intern</span></b></h3>
+                                    <p class="left-align">
+                                        <br> Jul 2017 – Aug 2017
+                                        <br> • Collaborated with my team to improve the C# .NET MVC CRM (Customer Relationship Management) website which specialized for privately-offered fund companies.
+                                        <br> • Worked closely with clients to modify the features. (SQL, C#, .NET, Web MVC)
+
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
                         </div>div>
                         <div class="row experience-cards">
-                                <div class="col-md-4 education-card">
-                                        <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300">Astrometric Instruments Inc.</h3>
-                                        <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
-                                                 
-                                               <h3 class="no_margin" ><b><span class="invert">Software Engineer</span></b></h3>
-                                              <p class="left-align">
-                                                    <br> Dec 2016 – Sep 2017 
-                                                    <br> • Built and tested a telescope pointing model solver and error correction desktop software (WPF C# .Net)
-                                                    <br> • Collaborated with team members on building the system. 
-                                                    <br> • Developed the star map graphing library with C#.
+                            <div class="col-md-4 education-card">
+                                <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300"> <span style="color:#4b2e83;font-weight: bolder;
+                                    text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;background-color: inherit !important">Astrometric Instruments Inc.</span></h3>
+                                <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
 
-                                                    
-                                               <br>
-                                           </p>
-                                           </div>
-                                       </div>
-                        
-                                <div class=" col-md-4 education-card">
-                                        <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300">VEIL Inc.</h3>
-                                        <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
-                                                 
-                                               <h3 class="no_margin" ><b><span class="invert">Embedded System Developer</span></b></h3>
-                                              <p class="left-align">
-                                                    <br> Nov 2016 – Sep 2017
-                                                    <br> • Designed, Built and tested a skateboard/snowboard force detect system,
-                                                    communicating with user’s phone via Bluetooth in real time. 
-                                                    <br> • Collaborated with cross-functional development teams on the products. (Arduino, Embedded
-                                                    System, Node.js, Electronics, wireless networking)
-                                                    
-                                               <br>
-                                           </p>
-                                           </div>
-                                       </div>
+                                    <h3 class="no_margin"><b><span class="invert">Software Engineer</span></b></h3>
+                                    <p class="left-align">
+                                        <br> Dec 2016 – Sep 2017
+                                        <br> • Built and tested a telescope pointing model solver and error correction desktop software (WPF C# .Net)
+                                        <br> • Collaborated with team members on building the system.
+                                        <br> • Developed the star map graphing library with C#.
+
+
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class=" col-md-4 education-card">
+                                <h3 class="no_margin slide-anim" data-anim-delay="3" data-anim-duration="300"> <span style="color:#4b2e83;font-weight: bolder;
+                                    text-shadow: -2px -2px white, 2px 2px white, 2px 2px white, 2px 2px white;background-color: inherit !important">VEIL Inc.</span></h3>
+                                <div class="service-text fadeIn-anim" data-anim-delay="4" data-anim-duration="600" style="padding-top: 0.1em; font-size:20px">
+
+                                    <h3 class="no_margin"><b><span class="invert">Embedded System Developer</span></b></h3>
+                                    <p class="left-align">
+                                        <br> Nov 2016 – Sep 2017
+                                        <br> • Designed, Built and tested a skateboard/snowboard force detect system, communicating with user’s phone via Bluetooth in real time.
+                                        <br> • Collaborated with cross-functional development teams on the products. (Arduino, Embedded System, Node.js, Electronics, wireless networking)
+
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                  
+
                     </div>
                 </div>
                 <!-- End fifth section -->
@@ -354,52 +707,84 @@
                         <h1>
                             <span class="slide-anim" data-anim-delay="1" data-anim-duration="300">Portfolio</span>
                         </h1>
+                        <div class=" col-md-12">
+                            <ul>
+                                <li>
+                                    <h2 class="no_margin slide-anim btn " data-toggle="modal" data-target="#portfolioModal1" data-anim-delay="3" data-anim-duration="300">HIGH-SPEED VISIBLE LIGHT DATA COMMUNICATION SYSTEM</h2>
+                                </li>
+                                <li>
+                                    <h2 class="no_margin slide-anim btn " data-toggle="modal" data-target="#portfolioModal2" data-anim-delay="3" data-anim-duration="300">EDIBLE MATERIAL PRINTER WITH UI</h2>
+                                </li>
+                                <li>
+                                    <h2 class="no_margin slide-anim btn " data-toggle="modal" data-target="#portfolioModal3" data-anim-delay="3" data-anim-duration="300">A HYBRID RECOMMENDER SYSTEM FOR DIET IMPROVEMENT BASED ON HEALTH AND TASTE
+                                    </h2>
+                                </li>
+                                <li>
+                                    <h2 class="no_margin slide-anim btn " data-toggle="modal" data-target="#portfolioModal4" data-anim-delay="3" data-anim-duration="300">2TR TUTORING PHONE APP
+
+                                    </h2>
+                                </li>
+                                <li>
+                                    <h2 class="no_margin slide-anim btn " data-toggle="modal" data-target="#portfolioModal5" data-anim-delay="3" data-anim-duration="300">PRESURE MAP SPORT ASSISTANT
+
+                                    </h2>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <!-- End container -->
                     </div>
-                    <!-- End section header -->
-                
+                    <!-- End portfolio section -->
                 </div>
-                <!-- End container -->
+                <!-- End fourth section -->
             </div>
-            <!-- End portfolio section -->
-        </div>
-        <!-- End fourth section -->
-        <!-- Fifth section -->
 
-        <!-- Show menu button -->
-        <div class="show-menu-button">
-            <div class="lines"></div>
-        </div>
-        <!-- End show menu button -->
 
-        <!-- Menu white overlay -->
-        <div class="menu-mask"></div>
-        <!-- Menu -->
-        <div class="menu">
-            <!-- Menu links -->
-            <ul class="menu-links-ul">
-                <li class="menu-links-li">
-                    <a class="menu-links-a" href="#home">Home</a>
-                </li>
-                <li class="menu-links-li">
-                    <a class="menu-links-a" href="#about">About me</a>
-                </li>
-                <li class="menu-links-li">
-                    <a class="menu-links-a" href="#education">Education</a>
-                </li>
-                <li class="menu-links-li">
-                    <a class="menu-links-a" href="#experience">Experience</a>
-                </li>
-                <li class="menu-links-li">
-                    <a class="menu-links-a" href="#portfolio">Portfolio</a>
-                </li>
-            </ul>
-            <!-- End menu links -->
-        </div>
-        <!-- End menu -->
+            <!-- Fifth section -->
 
-        <!-- Js -->
-        <script src="js/assets.js"></script>
-        <script src="js/main.js"></script>
+            <!-- Show menu button -->
+            <div class="show-menu-button">
+                <div class="lines"></div>
+            </div>
+            <!-- End show menu button -->
+
+            <!-- Menu white overlay -->
+            <div class="menu-mask"></div>
+            <!-- Menu -->
+            <div class="menu">
+                <!-- Menu links -->
+                <ul class="menu-links-ul">
+                    <li class="menu-links-li">
+                        <a class="menu-links-a" href="#home">Home</a>
+                    </li>
+                    <li class="menu-links-li">
+                        <a class="menu-links-a" href="#about">About me</a>
+                    </li>
+                    <li class="menu-links-li">
+                        <a class="menu-links-a" href="#education">Education</a>
+                    </li>
+                    <li class="menu-links-li">
+                        <a class="menu-links-a" href="#experience">Experience</a>
+                    </li>
+                    <li class="menu-links-li">
+                        <a class="menu-links-a" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+                <!-- End menu links -->
+            </div>
+            <!-- End menu -->
+
+
+
+
+
+            <!-- Js -->
+            <script src="js/assets.js"></script>
+            <script src="js/main.js"></script>
 
 </body>
 
